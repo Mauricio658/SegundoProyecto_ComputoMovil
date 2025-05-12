@@ -3,4 +3,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="cardview">#902E2C2C</color>
+    <color name="color_texto">#000</color>
+    <color name="color_titulos">#FF5722</color>
 </resources>

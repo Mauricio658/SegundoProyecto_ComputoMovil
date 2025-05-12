@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    kotlin("kapt") // ← Este debe estar
+    kotlin("kapt") //  Este debe estar
 }
 
 android {
@@ -49,24 +49,24 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    kapt("com.github.bumptech.glide:compiler:4.16.0")
+    kapt(libs.compiler)
 
     //Para retrofit y Gson
-    implementation("com.squareup.retrofit2:retrofit:2.11.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
 
 //Adicional para el interceptor
-    implementation("com.squareup.okhttp3:logging-interceptor:4.10.0")
+    implementation(libs.logging.interceptor)
 
 //Glide y Picasso
-    implementation("com.github.bumptech.glide:glide:4.16.0")
-    implementation("com.squareup.picasso:picasso:2.71828")
+    implementation(libs.glide)
+    implementation(libs.picasso)
 
 //Imágenes con bordes redondeados
-    implementation("com.makeramen:roundedimageview:2.3.0")
+    implementation(libs.roundedimageview)
 
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation(libs.kotlinx.coroutines.android)
 
-    implementation("androidx.cardview:cardview:1.0.0")
+    implementation(libs.androidx.cardview)
 
 }

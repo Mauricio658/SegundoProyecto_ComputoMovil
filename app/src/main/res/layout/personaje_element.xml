@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="202dp" />
+            app:layout_constraintGuide_begin="178dp" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline3"
@@ -67,17 +67,17 @@
             android:layout_width="191dp"
             android:layout_height="67dp"
             android:layout_marginStart="12dp"
-            android:fontFamily="@font/agbalumo"
+            android:fontFamily="@font/angkor"
             android:gravity="center"
-            android:text="TextView"
-            android:textColor="#FF5722"
-            android:textSize="30dp"
+            android:text="@string/nombre_personaje"
+            android:textColor="@color/color_titulos"
+            android:textSize="45sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline4"
             app:layout_constraintEnd_toStartOf="@+id/guideline6"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toTopOf="@+id/guideline5"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="1.0" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline6"
@@ -90,9 +90,9 @@
             android:id="@+id/tv_AFI"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/agbalumo"
-            android:text="TextView"
-            android:textSize="22dp"
+            android:fontFamily="@font/angkor"
+            android:text="@string/afiliacion_personaje"
+            android:textSize="28sp"
             app:layout_constraintBottom_toTopOf="@+id/guideline3"
             app:layout_constraintEnd_toStartOf="@+id/guideline6"
             app:layout_constraintHorizontal_bias="0.418"

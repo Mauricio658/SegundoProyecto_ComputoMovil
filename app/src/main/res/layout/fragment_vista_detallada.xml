@@ -20,6 +20,7 @@
             android:layout_width="288dp"
             android:layout_height="293dp"
             android:layout_marginBottom="16dp"
+            android:contentDescription="@string/descripcion_Imagen_personaje"
             android:scaleType="fitCenter" />
 
         <!-- Nombre -->
@@ -27,10 +28,11 @@
             android:id="@+id/tvNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre"
-            android:textColor="#FF5722"
-            android:textSize="35sp"
-            android:textStyle="bold" />
+            android:text="@string/nombre_personaje"
+            android:textColor="@color/color_titulos"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/angkor"/>
 
         <!-- KI -->
         <LinearLayout
@@ -42,8 +44,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ki:"
-                android:textColor="#000"
+                android:text="@string/ki_personaje"
+                android:textColor="@color/color_texto"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -66,8 +68,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ki Máx:"
-                android:textColor="#000"
+                android:text="@string/ki_maximo_personaje"
+                android:textColor="@color/color_texto"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -90,8 +92,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Raza:"
-                android:textColor="#000"
+                android:text="@string/raza_personaje"
+                android:textColor="@color/color_texto"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -114,7 +116,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Género:"
+                android:text="@string/genero_personaje"
                 android:textColor="#000"
                 android:textSize="17sp"
                 android:textStyle="bold" />
@@ -138,9 +140,9 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Afiliación:"
-                android:textColor="#000"
-                android:textSize="17dp"
+                android:text="@string/afiliacion_personaje"
+                android:textColor="@color/color_texto"
+                android:textSize="17sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -159,10 +161,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Descripción del personaje"
+            android:text="@string/descripcion_personaje"
             android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="16dp"
+            android:textSize="16sp"
             android:textStyle="italic" />
 
         <!-- Título de transformaciones -->
@@ -170,12 +172,13 @@
             android:id="@+id/tvTransformaciones"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Transformaciones"
-            android:textSize="35dp"
-            android:textColor="#FF5722"
+            android:text="@string/transformaciones_personajes"
+            android:textSize="40sp"
+            android:textColor="@color/color_titulos"
             android:textStyle="bold"
             android:layout_marginTop="24dp"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:fontFamily="@font/angkor"/>
 
         <!-- Contenedor dinámico -->
         <LinearLayout
