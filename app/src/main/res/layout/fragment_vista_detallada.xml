@@ -1,14 +1,188 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".VistaDetallada">
+    android:padding="16dp"
+    android:background="@drawable/background">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/layoutPrincipal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/cardview">
 
-</FrameLayout>
+        <!-- Imagen principal -->
+        <ImageView
+            android:id="@+id/ivPersonaje"
+            android:layout_width="288dp"
+            android:layout_height="293dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter" />
+
+        <!-- Nombre -->
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textColor="#FF5722"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <!-- KI -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ki:"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvKi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- KI MÁX -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ki Máx:"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvKiMax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- RAZA -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Raza:"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvRaza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- GÉNERO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Género:"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <!-- AFILIACIÓN -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Afiliación:"
+                android:textColor="#000"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAfiliacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <!-- Descripción -->
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Descripción del personaje"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="italic" />
+
+        <!-- Título de transformaciones -->
+        <TextView
+            android:id="@+id/tvTransformaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transformaciones"
+            android:textSize="35dp"
+            android:textColor="#FF5722"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:visibility="gone" />
+
+        <!-- Contenedor dinámico -->
+        <LinearLayout
+            android:id="@+id/contenedorTransformaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</ScrollView>
