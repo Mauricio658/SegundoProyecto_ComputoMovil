@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KiDex</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nombre_personaje">Name</string>
+    <string name="ki_personaje">Ki:</string>
+    <string name="ki_maximo_personaje">Ki Máx:</string>
+    <string name="genero_personaje">Gender</string>
+    <string name="afiliacion_personaje">Affiliation</string>
+    <string name="descripcion_personaje">Character Description</string>
+    <string name="transformaciones_personajes">Transformations</string>
+    <string name="descripcion_Imagen_personaje">Character Image</string>
+    <string name="nombre_Transformacion">Super Saiyan</string>
+    <string name="ki_transformacion">Ki: 90,000,000</string>
+    <string name="textoBienvenida">Explore and discover all the characters</string>
+    <string name="raza_personaje">Race</string>
+</resources>

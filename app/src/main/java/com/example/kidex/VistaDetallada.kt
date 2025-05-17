@@ -62,7 +62,7 @@ class VistaDetallada : Fragment() {
                         val ki = itemView.findViewById<TextView>(R.id.tvKiTransformacion)
 
                         nombre.text = t.name
-                        ki.text = "Ki: ${t.ki}"
+                        "Ki: ${t.ki}".also { ki.text = it }
                         Glide.with(requireContext()).load(t.image).into(iv)
 
                         contenedor.addView(itemView)
