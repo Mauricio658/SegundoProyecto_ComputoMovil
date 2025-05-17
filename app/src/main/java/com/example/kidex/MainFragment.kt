@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.bumptech.glide.Glide
 import com.example.kidex.databinding.FragmentMainBinding
 import com.example.kidex.model.Personaje
 import com.example.kidex.network.RetrofitClient
@@ -34,9 +35,17 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding.rvPersonaje.layoutManager = LinearLayoutManager(requireContext())
 
+        Glide.with(this)
+            .asGif()
+            .load(R.drawable.loading) // nombre del gif: loading.gif
+            .into(binding.loadingGif)
 
         lifecycleScope.launch {
             try {
+                // Mostrar pantalla de carga
+                binding.loadingLayout.visibility = View.VISIBLE
+                binding.rvPersonaje.visibility = View.GONE
+
                 val response = RetrofitClient.api.getPersonajes()
                 val personajes = response.items
 
@@ -54,10 +63,18 @@ class MainFragment : Fragment() {
 
                 binding.rvPersonaje.adapter = adapter
 
+                // Esperar 5 segundos antes de mostrar el RecyclerView
+                kotlinx.coroutines.delay(5000)
+
             } catch (e: Exception) {
                 e.printStackTrace()
                 Toast.makeText(requireContext(), "Error: ${e.message}", Toast.LENGTH_LONG).show()
+            } finally {
+                // Ocultar pantalla de carga
+                binding.loadingLayout.visibility = View.GONE
+                binding.rvPersonaje.visibility = View.VISIBLE
             }
         }
     }
+
 }

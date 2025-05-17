@@ -13,4 +13,5 @@
     <string name="descripcion_Imagen_personaje">Imagen del personaje</string>
     <string name="nombre_Transformacion">Super Saiyan</string>
     <string name="ki_transformacion">Ki: 90,000,000</string>
+    <string name="textoBienvenida">Explora y descubre a todos los personajes</string>
 </resources>

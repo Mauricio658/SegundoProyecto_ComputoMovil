@@ -61,7 +61,6 @@ dependencies {
 //Glide y Picasso
     implementation(libs.glide)
     implementation(libs.picasso)
-
 //Imágenes con bordes redondeados
     implementation(libs.roundedimageview)
 
